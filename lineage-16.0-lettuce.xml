@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="local"
+          fetch="https://github.com/lettuce-pie/"
+          revision="lineage-16.0" />
+  
+  <project path="device/yu/lettuce" name="android_device_yu_lettuce" remote="local" />
+  <project path="vendor/yu" name="proprietary_vendor_yu" remote="local" />
+  <project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" remote="local" />
+
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android" name="krasCGQ/aarch64-linux-android" remote="github" revision="opt-gnu-8.x" />
+
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="platform/hardware/intel/common/libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="platform/hardware/intel/common/libva" />
+  <remove-project name="platform/hardware/intel/common/libwsbm" />
+  <remove-project name="platform/hardware/intel/common/omx-components" />
+  <remove-project name="platform/hardware/intel/common/utils" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="platform/hardware/intel/img/hwcomposer" />
+  <remove-project name="platform/hardware/intel/img/psb_headers" />
+  <remove-project name="platform/hardware/intel/img/psb_video" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_keymaster" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <remove-project name="LineageOS/android_hardware_ril" />
+
+  <project path="hardware/qcom/audio-caf/msm8916" name="LOS-16-hals" groups="qcom,qcom_audio,pdk" remote="local" revision="audio-caf/msm8916" />
+  <project path="hardware/qcom/bt-caf" name="LOS-16-hals" groups="qcom,pdk" remote="local" revision="bt-caf" />
+  <project path="hardware/qcom/display-caf/msm8916" name="LOS-16-hals" groups="pdk,qcom,qcom_display" remote="local" revision="display-caf/msm8916" />
+  <project path="hardware/qcom/keymaster" name="LOS-16-hals" groups="qcom,pdk" remote="local" revision="keymaster" />
+  <project path="hardware/qcom/media-caf/msm8916" name="LOS-16-hals" groups="qcom,pdk" remote="local" revision="media-caf/msm8916" />
+  <project path="hardware/qcom/wlan-caf" name="LOS-16-hals" groups="qcom_wlan,pdk" remote="local" revision="wlan-caf" />
+  <project path="hardware/ril-caf" name="LOS-16-hals" groups="pdk" remote="local" revision="ril-caf" />
+
+</manifest>
